@@ -1,0 +1,175 @@
+body
+ {
+   margin: 0;
+   padding: 0;
+   
+   background: rgb(204, 190, 190);
+   color: #cdcdcd;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   
+   z-index: 1;
+   
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: blue
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 50px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   z-index: 2;
+   
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -50px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   border: 4px solid blue;
+   border-radius: 12px;
+   background: #ededed;
+   list-style-type: none;
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   opacity: 0;
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+   opacity: 1;
+ }
+
+ /* ___________________________________________________________________________________________________________ */
+
+ #menuTogglesecond
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 490px;
+   
+   z-index: 1;
+   
+   user-select: none;
+ }
+ 
+ #menuTogglesecond a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuTogglesecond a:hover
+ {
+   color: blue
+ }
+ 
+ #menuTogglesecond input
+ {
+   display: block;
+   width: 40px;
+   height: 50px;
+   position: absolute;
+   top: -7px;
+   left: -0px;
+   
+   cursor: pointer;
+   
+   z-index: 2;
+   
+ }
+ 
+ #menuTogglesecond span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuTogglesecond span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menusecond
+ {
+   position: absolute;
+   width: 300px;
+   margin: -50px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   border: 4px solid blue;
+   border-radius: 12px;
+   background: #ededed;
+   list-style-type: none;
+   
+   transform-origin: 0% 0%;
+   transform: translate(0%, -100%);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   opacity: 0;
+ }
+ 
+ #menusecond li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ #menuTogglesecond input:checked ~ ul
+ {
+   transform: none;
+   opacity: 1;
+ }
